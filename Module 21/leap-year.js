@@ -25,3 +25,15 @@ function leapYear(year){
 }
 var thisYear = leapYear(2023);
 console.log(thisYear);
+
+// *shorter version
+
+function leapYear(year){
+    var remainder = year % 4;
+    if(remainder === 0){
+        return true;
+    }
+    return false;
+}
+var thisYear = leapYear(2020);
+console.log('the year is leap:', thisYear); 
